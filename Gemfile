@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-ruby '3.0.0'
+ruby '3.1.0'
 
 # Vite-related gems (for multi-ecosystem group testing)
 gem 'vite_rails', '~> 3.0'
