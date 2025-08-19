@@ -1,0 +1,29 @@
+version: 2
+multi-ecosystem-groups:
+  vite:
+    schedule:
+      interval: "monthly"
+      
+updates:
+  - package-ecosystem: "bundler" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    patterns:
+      - "vite*"
+    multi-ecosystem-group: "vite"
+  - package-ecosystem: "npm" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    patterns:
+      - "vite*"
+    multi-ecosystem-group: "vite"
+  - package-ecosystem: "bundler" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "monthly"
+    groups:
+      aws:
+        patterns:
+          - "aws*"
+  - package-ecosystem: "npm" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "monthly"
