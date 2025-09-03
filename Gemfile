@@ -14,7 +14,7 @@ gem 'aws-sdk-s3', '~> 1.0'
 gem 'aws-partitions', '~> 1.0'
 
 # Other common gems
-gem 'rails', '~> 7.0.0'
+gem 'rails', '~> 7.1.5'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
 gem 'bootsnap', '>= 1.4.4', require: false
