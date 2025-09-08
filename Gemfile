@@ -11,7 +11,7 @@ gem 'vite_ruby', '~> 3.0'
 # AWS-related gems (for bundler group testing)
 gem 'aws-sdk-core', '~> 3.0'
 gem 'aws-sdk-s3', '~> 1.0'
-gem 'aws-partitions', '~> 1.0'
+gem 'aws-partitions', '~> 1.1154'
 
 # Other common gems
 gem 'rails', '~> 7.0.0'
