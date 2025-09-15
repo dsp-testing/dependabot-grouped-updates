@@ -20,7 +20,7 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^3.0.0",
     "typescript": "^4.9.0",
-    "eslint": "^8.0.0"
+    "eslint": "^9.35.0"
   },
   "keywords": ["dependabot", "testing", "vite"],
   "author": "Test Author",
