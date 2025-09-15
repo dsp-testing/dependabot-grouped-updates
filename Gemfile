@@ -16,7 +16,7 @@ gem 'aws-partitions', '~> 1.0'
 # Other common gems
 gem 'rails', '~> 7.0.0'
 gem 'pg', '~> 1.1'
-gem 'puma', '~> 5.0'
+gem 'puma', '~> 7.0'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
