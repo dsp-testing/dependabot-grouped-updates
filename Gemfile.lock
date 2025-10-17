@@ -98,6 +98,7 @@ GEM
     dry-cli (1.3.0)
     erubi (1.13.1)
     ffi (1.17.2-arm64-darwin)
+    ffi (1.17.2-x86_64-linux-gnu)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.7)
@@ -118,7 +119,7 @@ GEM
     marcel (1.0.4)
     method_source (1.1.0)
     mini_mime (1.1.5)
-    minitest (5.25.5)
+    minitest (5.26.0)
     msgpack (1.8.0)
     mutex_m (0.3.0)
     net-imap (0.5.9)
@@ -131,13 +132,16 @@ GEM
     net-smtp (0.5.1)
       net-protocol
     nio4r (2.7.4)
-    nokogiri (1.18.9-arm64-darwin)
+    nokogiri (1.18.10-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.18.10-x86_64-linux-gnu)
       racc (~> 1.4)
     pg (1.6.1-arm64-darwin)
+    pg (1.6.1-x86_64-linux)
     puma (5.6.9)
       nio4r (~> 2.0)
     racc (1.8.1)
-    rack (2.2.17)
+    rack (2.2.20)
     rack-proxy (0.7.7)
       rack
     rack-test (2.2.0)
@@ -196,10 +200,10 @@ GEM
     timeout (0.4.3)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    vite_rails (3.0.18)
+    vite_rails (3.0.19)
       railties (>= 5.1, < 9)
       vite_ruby (~> 3.0, >= 3.2.2)
-    vite_ruby (3.9.1)
+    vite_ruby (3.9.2)
       dry-cli (>= 0.7, < 2)
       logger (~> 1.6)
       mutex_m
@@ -213,6 +217,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-24
+  x86_64-linux
 
 DEPENDENCIES
   aws-partitions (~> 1.0)
@@ -227,7 +232,7 @@ DEPENDENCIES
   rspec-rails (~> 6.0)
   spring
   vite_rails (~> 3.0)
-  vite_ruby (~> 3.0)
+  vite_ruby (~> 3.9)
 
 RUBY VERSION
    ruby 3.1.0p0
