@@ -2,7 +2,7 @@ version: 2
 multi-ecosystem-groups:
   vite:
     schedule:
-      interval: "monthly"
+      interval: "weekly"
       
 updates:
   - package-ecosystem: "bundler" # See documentation for possible values
@@ -18,7 +18,7 @@ updates:
   - package-ecosystem: "bundler" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
-      interval: "monthly"
+      interval: "weekly"
     groups:
       aws:
         patterns:
@@ -26,4 +26,4 @@ updates:
   - package-ecosystem: "npm" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
-      interval: "monthly"
+      interval: "weekly"
