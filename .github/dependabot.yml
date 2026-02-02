@@ -3,7 +3,7 @@ multi-ecosystem-groups:
   vite:
     schedule:
       interval: "weekly"
-      
+
 updates:
   - package-ecosystem: "bundler" # See documentation for possible values
     directory: "/" # Location of package manifests
@@ -27,3 +27,27 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+
+  # Bundler monorepo grouped updates testing (gems/app-a)
+  - package-ecosystem: "bundler"
+    directory: "/gems/app-a"
+    schedule:
+      interval: "monthly"
+    groups:
+      grouped-bundler-deps:
+        patterns:
+          - "aws*"
+          - "rails"
+        update-types: ["minor", "patch"]
+
+  # Bundler monorepo grouped updates testing (gems/app-b)
+  - package-ecosystem: "bundler"
+    directory: "/gems/app-b"
+    schedule:
+      interval: "monthly"
+    groups:
+      grouped-bundler-deps:
+        patterns:
+          - "aws*"
+          - "rails"
+        update-types: ["minor", "patch"]
