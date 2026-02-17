@@ -51,3 +51,46 @@ updates:
           - "aws*"
           - "rails"
         update-types: ["minor", "patch"]
+
+  # === group-by: dependency-name testing ===
+
+  # Test 1: group-by as sole rule (bundler, single directory)
+  - package-ecosystem: "bundler"
+    directory: "/group-by/bundler-standalone"
+    schedule:
+      interval: "weekly"
+    groups:
+      per-dependency:
+        group-by: dependency-name
+
+  # Test 2: group-by combined with patterns (bundler, single directory)
+  - package-ecosystem: "bundler"
+    directory: "/group-by/bundler-with-patterns"
+    schedule:
+      interval: "weekly"
+    groups:
+      filtered-per-dependency:
+        patterns:
+          - "aws*"
+          - "rails"
+        group-by: dependency-name
+
+  # Test 3: group-by with multi-directory (bundler)
+  - package-ecosystem: "bundler"
+    directories:
+      - "/group-by/bundler-multi-dir/app-a"
+      - "/group-by/bundler-multi-dir/app-b"
+    schedule:
+      interval: "weekly"
+    groups:
+      per-dependency:
+        group-by: dependency-name
+
+  # Test 4: group-by as sole rule (npm, single directory)
+  - package-ecosystem: "npm"
+    directory: "/group-by/npm-standalone"
+    schedule:
+      interval: "weekly"
+    groups:
+      per-dependency:
+        group-by: dependency-name

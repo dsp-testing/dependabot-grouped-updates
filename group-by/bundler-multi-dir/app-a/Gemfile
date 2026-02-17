@@ -1,0 +1,18 @@
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
+
+ruby '>= 3.1.0'
+
+# Shared dependencies for grouped updates testing
+# Using intentionally outdated versions to trigger Dependabot updates
+
+# Rails framework (7.0.8.3 is latest 7.0.x)
+gem 'rails', '7.0.4'
+
+# AWS SDK gems (grouped under "aws*" pattern)
+# Latest: aws-sdk-core 3.241.x, aws-sdk-s3 1.213.x, aws-partitions 1.1211.x
+# Using older but compatible versions
+gem 'aws-sdk-core', '3.203.0'
+gem 'aws-sdk-s3', '1.160.0'
+gem 'aws-partitions', '1.950.0'
