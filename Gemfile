@@ -6,7 +6,7 @@ ruby '3.1.0'
 
 # Vite-related gems (for multi-ecosystem group testing)
 gem 'vite_rails', '~> 3.0'
-gem 'vite_ruby', '~> 3.0'
+gem 'vite_ruby', '~> 3.9'
 
 # AWS-related gems (for bundler group testing)
 gem 'aws-sdk-core', '~> 3.0'
