@@ -13,6 +13,6 @@ gem 'rails', '7.0.4'
 # AWS SDK gems (grouped under "aws*" pattern)
 # Latest: aws-sdk-core 3.241.x, aws-sdk-s3 1.213.x, aws-partitions 1.1211.x
 # Using older but compatible versions
-gem 'aws-sdk-core', '3.203.0'
-gem 'aws-sdk-s3', '1.160.0'
-gem 'aws-partitions', '1.950.0'
+gem 'aws-sdk-core', '3.209.1'
+gem 'aws-sdk-s3', '1.168.0'
+gem 'aws-partitions', '1.1214.0'
