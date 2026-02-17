@@ -8,11 +8,11 @@ ruby '>= 3.1.0'
 # Using intentionally outdated versions (different from app-a) to trigger Dependabot updates
 
 # Rails framework (7.0.8.3 is latest 7.0.x)
-gem 'rails', '7.0.6'
+gem 'rails', '8.1.2'
 
 # AWS SDK gems (grouped under "aws*" pattern)
 # Latest: aws-sdk-core 3.241.x, aws-sdk-s3 1.213.x, aws-partitions 1.1211.x
 # Using older but compatible versions (slightly newer than app-a)
-gem 'aws-sdk-core', '3.210.0'
-gem 'aws-sdk-s3', '1.170.0'
-gem 'aws-partitions', '1.995.0'
+gem 'aws-sdk-core', '3.242.0'
+gem 'aws-sdk-s3', '1.213.0'
+gem 'aws-partitions', '1.1214.0'
