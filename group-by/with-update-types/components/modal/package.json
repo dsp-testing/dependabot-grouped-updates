@@ -1,0 +1,13 @@
+{
+  "name": "component-modal",
+  "version": "1.0.0",
+  "description": "Modal component – tests group-by with update-types",
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "focus-trap-react": "10.1.0"
+  },
+  "devDependencies": {
+    "typescript": "5.0.2"
+  }
+}
