@@ -94,3 +94,18 @@ updates:
     groups:
       per-dependency:
         group-by: dependency-name
+
+  # Test 5: group-by with update-types filter (npm, multi-directory with glob)
+  - package-ecosystem: npm
+    directories:
+      - "/group-by/with-update-types/"
+      - "/group-by/with-update-types/components/*"
+    schedule:
+      interval: weekly
+    groups:
+      non-major-dependencies:
+        group-by: dependency-name
+        applies-to: version-updates
+        update-types:
+          - "minor"
+          - "patch"
