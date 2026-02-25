@@ -101,7 +101,7 @@ updates:
       - "/group-by/with-update-types/"
       - "/group-by/with-update-types/components/*"
     schedule:
-      interval: weekly
+      interval: daily
     groups:
       non-major-dependencies:
         group-by: dependency-name
